@@ -19,7 +19,7 @@ opcao = gets.chomp.to_i
         und = gets.chomp.to_i
         total += options['Produto1'] * und
 
-        puts 'total: R$#{total}'
+        puts "total: R$#{total}"
         puts menu['reset']
         opcao = gets.chomp.to_i
         
@@ -30,10 +30,10 @@ opcao = gets.chomp.to_i
         
         when 2
         puts 'Quantidade: '
-        qtd = gets.chomp.to_i
+        und = gets.chomp.to_i
         total += options['Produto2'] * und
         
-        puts 'total: R$#{total}'
+        puts "total: R$#{total}"
         puts menu['reset']
         opcao = gets.chomp.to_i
             
@@ -44,21 +44,20 @@ opcao = gets.chomp.to_i
         
         when 3
         puts 'Quantidade: '
-        qtd = gets.chomp.to_i
+        und = gets.chomp.to_i
         total += options['teclado'] * und
         
-        puts 'total: R$#{total}'
+        puts "total: R$#{total}"
         puts menu['reset']
         opcao = gets.chomp.to_i
 
             if opcao == 0
             puts menu['start']
             opcao = gets.chomp.to_i
-            end
+         end
         end 
     end
-
-    
+system "clear" 
 if opcao == 2
-    puts 'Obrigada!!!'
+    puts 'Obrigada!!!'   
 end
